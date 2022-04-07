@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BloodBank & Management System | Become A Donor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/modern-business.css">
+   <style media="screen">
+     .navbar-toggler{
+       z-index : 1;
+     }
+     @media (max-width:576px){
+       nav > .container{
+         width: 100%;
+       }
+     }
+   </style>
+   <style media="screen">
+     .errorWrap{
+       padding: 10px;
+       margin: 0 0 20px 0;
+       background: #fff;
+       border-left : 4px solid #dd3d36;
+       -webkit-box-shadow : 0 1px 1px 0 rgba(0,0,0,.1);
+       box-shadow : 0 1px 1px 0 rgba(0,0,0,.1);
+     }
+     .succWrap{
+       padding: 10px;
+       margin : 0 0 20px 0;
+       background: #fff;
+       border-left:  4px solid #5cb85c;
+       -webkit-box-shadow : 0 1px 1px 0 rgba(0,0,0,.1);
+       box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+     }
+   </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" name="button"data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <a href="index.php" class="navbar-brand">BloodBank And Donor Management System</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="page.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page.php?type=donor">Why Become Donor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="become-donor.html">Become a Donar</a>
+            </li>
+
+             <li class="nav-item">
+                <a class="nav-link" href="search-donor.php">Search Blood</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact us</a>
+            </li>
+      </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="mt-4 mb-3">Search <small>Donor</small> </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.php">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Search Donor</li>
+      </ol>
+
+      <form name="donor" method="post">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="font-italic">
+              Blood Group <span style="color:red"></span>
+            </div>
+            <div class="">
+              <select class="form-control" name="bloodgroup" required>
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="font-italic">
+              Location
+            </div>
+            <div>
+              <textarea name="location" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+              <div>
+                <input type="submit" name="submit" value="submit" class="btn btn-primary" style="cursor:pointer">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"> <img src="images/blood-donor.jpg" class="card-img-top img-fluid" alt=""> </a>
+            <div class="card-block">
+              <h4 class="card-title">
+                <a href="#"></a></h4>
+                <p class="card-text"><b>Mobile No. / Email Id :</b>
+
+                </p>
+
+                <p class="card-text"><b> Gender :</b></p>
+                <p class="card-text"><b> Age :</b></p>
+                <p class="card-text"><b>Blood Group :</b></p>
+                <p class="card-text"><b>Address :</b>
+
+                </p>
+                <p class="card-text"><b>Message :</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer  class="py-5 bg-inverse">
+      <div class="container">
+        <p class="m-0 text-center text-white bg-dark">Copyright &copy; BloodBank And Donor Management System 2021</p>
+      </div>
+    </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js" integrity="sha512-X7kCKQJMwapt5FCOl2+ilyuHJp+6ISxFTVrx+nkrhgplZozodT9taV2GuGHxBgKKpOJZ4je77OuPooJg9FJLvw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>
